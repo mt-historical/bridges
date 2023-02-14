@@ -18,7 +18,7 @@ Mod for Minetest that adds bridges (only one node wide!), slim handrails and a s
 --]]
 
 -- to make life a bit easier
-local bild_pfad = "default_wood.png";
+local bild_pfad = minetest.get_modpath("default") and "default_wood.png" or "[combine:16x16^[noalpha^[colorize:#654321";
 local bild_pfad_s1 = bild_pfad;
 local bild_pfad_s2 = bild_pfad;
 
@@ -291,8 +291,9 @@ minetest.register_craft({
 -- special: self-building automatic bridge
 
 minetest.register_node("bridges:bridge_auto", {
-	description = "self building bruidge",
-	tiles = { "default_chest_top.png" }, -- looks from all sides like the top of a chest
+	description = "self building bridge",
+	-- looks from all sides like the top of a chest
+	tiles = { (minetest.get_modpath("default") and "default_chest_top.png" or "[combine:16x16^[noalpha^[colorize:#654321") },
 	drawtype = "cube",
 	is_ground_content = true,
 	groups = {snappy=2,choppy=2,oddly_breakable_by_hand=2,flammable=3},
