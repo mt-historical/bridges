@@ -293,7 +293,7 @@ minetest.register_craft({
 minetest.register_node("bridges:bridge_auto", {
 	description = "self building bridge",
 	-- looks from all sides like the top of a chest
-	tiles = { (minetest.get_modpath("default") and "default_chest_top.png" or "[combine:16x16^[noalpha^[colorize:#654321") },
+	tiles = {(minetest.get_modpath("default") and "default_chest_top.png" or "[combine:16x16^[noalpha^[colorize:#654321")},
 	drawtype = "cube",
 	is_ground_content = true,
 	groups = {snappy=2,choppy=2,oddly_breakable_by_hand=2,flammable=3},
