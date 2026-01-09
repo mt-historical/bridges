@@ -14,9 +14,7 @@ Groundplate: yields 2 "G" parts which are the basis for further bridges:
 <br> V V V
 
 Handrail: yields 4 "H" parts which are needed in further receipes:
-<br> - - -
-<br> - G -
-<br> - - -
+<br> G
 
 small bridge:
 <br> S - S
@@ -24,9 +22,7 @@ small bridge:
 <br> S - S
 
 middle part (fits between small bridges):
-<br> - - -
 <br> H G H
-<br> - - -
 
 corner of a bridge:
 <br> S H S
@@ -44,8 +40,6 @@ end of a bridge.
 <br> S - S
 
 handrail, one side closed:
-<br> - - -
-<br> - - -
 <br> S H S
 
 handrail, two sides closed:
@@ -59,9 +53,9 @@ handrail, three sides closed (if you want to walk around it):
 <br> S H S
 
 a large, 3 nodes long bridge:
-<br> - small_bridge -
-<br> - middle_part_of_bridge -
-<br> - small_bridge -
+<br> small_bridge
+<br> middle_part_of_bridge
+<br> small_bridge
 
 
 the self-building automatic bridge:

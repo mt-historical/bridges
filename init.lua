@@ -84,9 +84,7 @@ local BRIDGE_PARTS = {
 		"handrail for bridges and staircases",
 		{ bar_front },
 		{
-			{ "", "", "" },
-			{ "", BASIS, "" },
-			{ "", "", "" }
+			{ BASIS }
 		},
 		" 4"
 	}, -- one groundplate yiels 4 handrails
@@ -120,9 +118,7 @@ local BRIDGE_PARTS = {
 			groundplate_small,
 		},
 		{
-			{ "", "", "" },
-			{ RAIL, BASIS, RAIL },
-			{ "", "", "" }
+			{ RAIL, BASIS, RAIL }
 		},
 		""
 	},
@@ -168,8 +164,7 @@ local BRIDGE_PARTS = {
 		leg_front_left,
 		leg_front_right,
 		bar_front, },
-		{ { "",    "",    ""    },
-		{ "",    "",    ""    },
+		{
 		{ STICK, RAIL,  STICK }
 		}, "" },
 
@@ -274,9 +269,9 @@ core.register_node("bridges:bridge_large",
 core.register_craft({
 	output = "bridges:bridge_large",
 	recipe = {
-		{ "", "bridges:bridge_middle", "" },
-		{ "", "bridges:bridge_small",  "" },
-		{ "", "bridges:bridge_middle", "" },
+		{ "bridges:bridge_middle" },
+		{ "bridges:bridge_small"  },
+		{ "bridges:bridge_middle" },
 	}
 });
 
