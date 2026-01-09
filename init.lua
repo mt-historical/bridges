@@ -215,10 +215,6 @@ for i in ipairs( BRIDGE_PARTS ) do
 			type = "fixed",
 			fixed = BRIDGE_PARTS[i][3],
 		},
-		selection_box = {
-			type = "fixed",
-			fixed = {-0.5,-0.5,-0.5, 0.5, 0.5, 0.5},
-		},
 		-- flammable so that it can be burned if no longer needed
 		groups = {snappy=2,choppy=2,oddly_breakable_by_hand=2,flammable=3},
 	});
@@ -271,10 +267,6 @@ core.register_node("bridges:bridge_large",
 
 			{-0.4,-0.45,-1.5,  0.4,-0.4,1.5},
 		}
-	},
-	selection_box = {
-		type = "fixed",
-		fixed = {-0.5,-0.5,-1.5,  0.5,0.5, 1.5},
 	},
 	groups = {snappy=2,choppy=2,oddly_breakable_by_hand=2,flammable=2}
 })
